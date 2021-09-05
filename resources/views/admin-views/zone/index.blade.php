@@ -33,7 +33,7 @@
                             <div class="form-group">
                                 <label class="input-label"
                                        for="exampleFormControlInput1">Coordinates<span class="input-label-secondary" title="{{__('messages.draw_your_zone_on_the_map')}}">{{__('messages.draw_your_zone_on_the_map')}}</span></label>
-                                       <textarea type="text" rows="8" name="coordinates"  id="coordinates" class="form-control" readonly></textarea>
+                                       <textarea type="text" rows="8" name="coordinates"  id="coordinates" class="form-control"></textarea>
                             </div>
                         </div>
                         <div class="col-md-6 map-warper" style="height: 300px;">

@@ -1,6 +1,6 @@
 <style>
     .nav-sub{
-        background: #334257!important;
+        background: #000000!important;
     }
 </style>
 
@@ -31,7 +31,7 @@
             </div>
 
             <!-- Content -->
-            <div class="navbar-vertical-content" style="background-color: #334257;">
+            <div class="navbar-vertical-content" style="background-color: #000000;">
                 <ul class="navbar-nav navbar-nav-lg nav-tabs">
                     <!-- Dashboards -->
                     <li class="navbar-vertical-aside-has-menu {{Request::is('admin')?'show':''}}">

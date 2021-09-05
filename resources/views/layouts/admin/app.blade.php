@@ -127,7 +127,7 @@
 
 <!-- JS Preview mode only -->
 @include('layouts.admin.partials._header')
-@include('layouts.admin.partials._sidebar')
+@include('layouts.admin.partials._sidebar')                 <!-- GOH touched this code 9.4.7h 30min -->
 <!-- END ONLY DEV -->
 
 <main id="content" role="main" class="main pointer-event">
