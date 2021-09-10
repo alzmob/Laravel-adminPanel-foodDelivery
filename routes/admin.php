@@ -9,6 +9,7 @@ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function () {
         Route::get('login', 'LoginController@login')->name('login');
         Route::post('login', 'LoginController@submit')->middleware('actch');
         Route::get('logout', 'LoginController@logout')->name('logout');
+        Route::get('sendmail', 'LoginController@sendmail')->name('sendmail');
     });
     /*authentication*/
 

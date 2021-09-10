@@ -110,6 +110,9 @@
                                     <label class="custom-control-label text-muted" for="termsCheckbox">
                                         {{__('messages.remember')}} {{__('messages.me')}}
                                     </label>
+                                    <a style = 'float:right' href="{{route('admin.auth.sendmail')}}" >
+                                        forget_password
+                                    </a>
                                 </div>
                             </div>
                             <!-- End Checkbox -->

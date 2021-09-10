@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
 
 class LoginController extends Controller
 {
@@ -39,5 +40,27 @@ class LoginController extends Controller
     {
         auth()->guard('admin')->logout();
         return redirect()->route('admin.auth.login');
+    }
+
+    public function sendmail(Request $request)
+    {
+        // auth()->guard('admin')->logout();
+        // return "I am very genius !!! ";
+        // return redirect()->route('web.contact-us');
+
+        $to_name = 'RECEIVER_NAME';
+        $to_email = 'RECEIVER_EMAIL_ADDRESS';
+        $data = array('name'=>"first mail !@!", 'body' => "This is my first email test. Please help me with suucess and confidence.");
+        // $data = array('name'=>"Ogbonna Vitalis(sender_name)", "body" => "A test mail");
+        // dd($data);
+
+        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) 
+        {
+
+            $message->to($to_email, $to_name)->subject('Laravel Test Mail');
+            $message->from('noreply@yanoqueen.com','Test Mail');
+        });
+
+
     }
 }
